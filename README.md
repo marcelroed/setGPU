@@ -3,8 +3,15 @@
 A small Python library that automatically sets `CUDA_VISIBLE_DEVICES`
 to the least-loaded GPU on multi-GPU systems.
 
-+ Installation: `pip install setGPU`
-+ Usage: `import setGPU` before any import that will use a GPU like `torch` or `tensorflow`.
+This is a fork that allows for multiple GPUs to be used.
+Usage is different.
+
++ Installation: `pip install git+https://github.com/marcelroed/setGPU.git`
++ Usage:
+    + `import setGPU`
+    + `setGPU.init(num_gpus=n)` to use $n$ GPUs.
+    + These need to be ran before any import that will use a GPU like `torch` or `tensorflow`
+
 
 # Dependencies
 
