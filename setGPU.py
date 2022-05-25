@@ -19,7 +19,7 @@ def init(n=1):
 
     print("setGPU: Setting visible GPUs to to: {}".format(bestGPUs))
     os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
-    os.environ['CUDA_VISIBLE_DEVICES'] = str(bestGPUs)
+    os.environ['CUDA_VISIBLE_DEVICES'] = f"{','.join(map(str, bestGPUs))}"
 
     _has_inited = True
     n_gpus = n
