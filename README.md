@@ -6,17 +6,22 @@ to the least-loaded GPU on multi-GPU systems.
 This is a fork that allows for multiple GPUs to be used.
 Usage is different. $n$
 
-+ Installation: `pip install git+https://github.com/marcelroed/setGPU.git`
-+ Usage:
-    + `import setGPU`
-    + `setGPU.init(num_gpus=n)` to use $n$ GPUs.
-    + These need to be ran before any import that will use a GPU like `torch` or `tensorflow`
+## Installation
+`pip install git+https://github.com/marcelroed/setGPU.git`
+
+## Usage:
+```
+import setGPU
+setGPU.init(num_gpus=n)
+```
+to use $n$ GPUs.
+This block needs to be ran before any import that will use a GPU like `torch` or `tensorflow`
 
 
-# Dependencies
+## Dependencies
 
 + [Jongwook Choi's](https://wook.kr) [gpustat](https://github.com/wookayin/gpustat) library.
 
-# Licensing
+## Licensing
 
 This code is in the public domain.
