@@ -4,7 +4,7 @@ A small Python library that automatically sets `CUDA_VISIBLE_DEVICES`
 to the least-loaded GPU on multi-GPU systems.
 
 This is a fork that allows for multiple GPUs to be used.
-Usage is different.
+Usage is different. $n$
 
 + Installation: `pip install git+https://github.com/marcelroed/setGPU.git`
 + Usage:
